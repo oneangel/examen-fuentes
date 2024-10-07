@@ -59,7 +59,7 @@ export default function Page() {
         )}
       >
         <SidebarComponent open={open} setOpen={setOpen} />
-        <div className="flex flex-1">
+        <div className="flex flex-1 overflow-y-auto">
           <div className="flex flex-col flex-1 w-full h-full gap-2 p-2 bg-white border md:p-10 rounded-tl-2xl border-neutral-200">
             <h2 className="relative z-20 font-sans text-2xl font-bold tracking-tight text-center text-black md:text-4xl lg:text-7xl dark:text-white">
               ¿Qué es seguridad de la{" "}
@@ -150,7 +150,7 @@ export default function Page() {
                 </ModalBody>
               </Modal>
             </div>
-            <div className="grid grid-cols-3 mt-20">
+            <div className="grid grid-cols-1 gap-10 mt-20 md:grid-cols-3 md:gap-0">
               <div className="col-span-2">
                 <FocusCards cards={cards} />
               </div>
