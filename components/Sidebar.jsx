@@ -33,7 +33,12 @@ const SidebarComponent = ({ open, setOpen }) => {
   ];
 
   return (
-    <Sidebar open={open} setOpen={setOpen}>
+    <Sidebar
+      open={open}
+      setOpen={setOpen}
+      className="fixed top-0 left-0 z-50 w-64 h-full transition-transform duration-300 transform bg-white shadow-lg"
+      style={{ transform: open ? "translateX(0)" : "translateX(-100%)" }}
+    >
       <SidebarBody className="justify-between gap-10">
         <div className="flex flex-col flex-1 overflow-x-hidden overflow-y-auto">
           <div className="flex flex-col gap-5 mt-8">
@@ -42,7 +47,9 @@ const SidebarComponent = ({ open, setOpen }) => {
                 key={idx}
                 link={link}
                 className={cn(
-                  pathname === link.href ? "border-b-4 border-purple-500 transition rounded-md" : "", 
+                  pathname === link.href
+                    ? "border-b-4 border-purple-500 transition rounded-md"
+                    : ""
                 )}
               />
             ))}

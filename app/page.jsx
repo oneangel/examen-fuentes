@@ -37,14 +37,17 @@ export default function Page() {
   const cards = [
     {
       title: "Sección 1",
+      href: "/section1",
       src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Sección 2",
+      href: "/section2",
       src: "https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Sección 3",
+      href: "/section3",
       src: "https://images.unsplash.com/photo-1536148935331-408321065b18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
@@ -159,7 +162,7 @@ export default function Page() {
                       width={70}
                       height={70}
                       alt="angel-image"
-                      className="bg-"
+                      className="transition hover:-rotate-6 hover:scale-105"
                     />
                   </div>
 
